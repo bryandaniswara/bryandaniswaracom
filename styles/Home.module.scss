@@ -1,0 +1,99 @@
+@import './variables';
+
+.darkMode {
+	background-color: $bg-black;
+	color: $text-white;
+}
+
+.heading {
+	font-family: $font-primary;
+	font-style: bold;
+	font-size: 220px;
+	transition-duration: 300ms;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section {
+	max-width: $section-width;
+}
+
+.hero {
+	display: flex;
+	padding-top: 115px;
+	position: relative;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.subheading {
+	font-family: $font-secondary;
+	position: absolute;
+	right: 200px;
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	transition-duration: 300ms;
+}
+
+.role {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.based {
+	font-size: 24px;
+	font-weight: lighter;
+	padding-top: 10px;
+}
+
+.description {
+	font-size: 24px;
+	font-weight: normal;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1350px) {
+	.heading {
+		font-size: 15vw;
+	}
+
+	.subheading {
+		right: 150px;
+	}
+
+	.section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.subheading {
+		right: 80px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.hero {
+		flex-direction: column;
+		padding-top: 10px;
+	}
+
+	.subheading {
+		position: static;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	.role {
+		font-size: 1.5em;
+	}
+}

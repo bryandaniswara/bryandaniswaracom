@@ -1,0 +1,39 @@
+@import './variables';
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: $section-width;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.profilePicture {
+	margin-left: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+	.header {
+		flex-direction: column;
+
+		ul {
+			margin-top: 20px;
+		}
+	}
+
+	.profilePicture {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.header {
+		flex-direction: row;
+	}
+
+	.profilePicture {
+		margin-left: 10px;
+		width: 3em;
+	}
+}

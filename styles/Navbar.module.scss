@@ -1,0 +1,78 @@
+@import './variables';
+
+.navbarTabletDesktop {
+	min-width: 600px;
+	font-family: $font-primary;
+	font-weight: bold;
+	font-size: 24px;
+	color: $text-white;
+	margin-right: 30px;
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+
+		li {
+			a {
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+}
+
+.hamburger {
+	color: white;
+	font-size: 40px;
+	display: none;
+	margin-right: 30px;
+}
+
+.navbarMobile {
+	z-index: 100;
+	background-color: $bg-black;
+	display: none;
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+
+	ul {
+		padding-top: 20px;
+		li {
+			margin-top: 15px;
+
+			a {
+				text-decoration: none;
+				color: white;
+				font-size: 30px;
+				font-family: $font-primary;
+			}
+		}
+	}
+}
+
+.times {
+	position: absolute;
+	right: 30px;
+	top: 20px;
+	color: white;
+	font-size: 40px;
+}
+
+.navbarMobileActive {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: ease-in;
+}
+
+@media screen and (max-width: 600px) {
+	.navbarTabletDesktop {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	}
+}

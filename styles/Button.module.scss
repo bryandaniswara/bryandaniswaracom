@@ -1,0 +1,26 @@
+@import './variables';
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	font-family: $font-primary;
+	font-weight: bold;
+	font-size: 24px;
+	color: white;
+	background: rgba(181, 181, 181, 0.07);
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 0 10px;
+	height: 55px;
+
+	&:hover {
+		border: 1px solid #fff;
+		background: rgba(181, 181, 181, 0.07);
+	}
+}
+
+.icon {
+	margin-left: 10px;
+}
