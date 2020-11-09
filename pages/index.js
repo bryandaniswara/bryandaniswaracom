@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faArrowDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import cx from 'classnames';
 
 import Header from '../components/Header';
@@ -59,6 +59,16 @@ export default function Home() {
 								<img src="https://github-stats.bryandaniswara.com/api/pin/?username=bryandaniswara&repo=frontend-mentor-challenges&theme=dark" />
 							</a>
 						</div>
+					</div>
+				</section>
+				<section className={styles.section}>
+					<div className={styles.contact}>
+						<h1 className={styles.contact__heading}>Get in touch</h1>
+						<Button
+							text="Email me"
+							icon={faEnvelope}
+							href="mailto:bryan.daniswara@gmail.com"
+						/>
 					</div>
 				</section>
 			</main>
