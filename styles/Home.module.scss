@@ -1,0 +1,170 @@
+@import './variables';
+
+.darkMode {
+	background-color: $bg-black;
+	color: $text-white;
+}
+
+.heading {
+	font-family: $font-primary;
+	font-style: bold;
+	font-size: 220px;
+	transition-duration: 300ms;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.section {
+	max-width: $section-width;
+}
+
+.hero {
+	display: flex;
+	padding-top: 115px;
+	position: relative;
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 100%;
+}
+
+.subheading {
+	font-family: $font-secondary;
+	position: absolute;
+	right: 200px;
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	transition-duration: 300ms;
+}
+
+.role {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.based {
+	font-size: 24px;
+	font-weight: lighter;
+	padding-top: 10px;
+}
+
+.description {
+	font-size: 24px;
+	font-weight: normal;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+.projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 115px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.projects__heading {
+	font-family: $font-primary;
+	font-style: bold;
+	font-size: 64px;
+	text-align: center;
+}
+
+.projects__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 40px 0;
+	max-width: 1000px;
+
+	a {
+		display: block;
+		padding: 10px;
+	}
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 115px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	a {
+		margin: 80px 10px;
+	}
+}
+
+.contact__heading {
+	font-family: $font-primary;
+	font-style: bold;
+	font-size: 64px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1350px) {
+	.heading {
+		font-size: 15vw;
+	}
+
+	.subheading {
+		right: 150px;
+	}
+
+	.section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact__heading,
+	.projects__heading {
+		font-size: 4em;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.subheading {
+		right: 80px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.hero {
+		flex-direction: column;
+		padding-top: 10px;
+	}
+
+	.subheading {
+		position: static;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	.role {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contact__heading,
+	.projects__heading {
+		font-size: 2em;
+	}
+
+	.projects__items {
+		a {
+			img {
+				width: 280px;
+			}
+		}
+	}
+}
