@@ -14,6 +14,42 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Bryan Daniswara | Fullstack Javascript Developer</title>
+				<link rel="shortcut icon" href="/favicon.ico" />
+				<meta
+					name="title"
+					content="Bryan Daniswara | Fullstack Javascript Developer"
+				/>
+				<meta name="description" content="I'm passionate in crafting website" />
+
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://bryandaniswara.com/" />
+				<meta
+					property="og:title"
+					content="Bryan Daniswara | Fullstack Javascript Developer"
+				/>
+				<meta
+					property="og:description"
+					content="I'm passionate in crafting website"
+				/>
+				<meta
+					property="og:image"
+					content="https://bryandaniswara.com/preview.jpg"
+				/>
+
+				<meta property="twitter:card" content="summary_large_image" />
+				<meta property="twitter:url" content="https://bryandaniswara.com/" />
+				<meta
+					property="twitter:title"
+					content="Bryan Daniswara | Fullstack Javascript Developer"
+				/>
+				<meta
+					property="twitter:description"
+					content="I'm passionate in crafting website"
+				/>
+				<meta
+					property="twitter:image"
+					content="https://bryandaniswara.com/preview.jpg"
+				/>
 			</Head>
 			<Header />
 			<main className={cx(styles.darkMode, styles.center)}>
