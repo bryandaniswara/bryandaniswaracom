@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import styles from '../styles/Home.module.scss';
 import Button from '../components/Button';
 import SocialLink from '../components/SocialLink';
+import Footer from '../components/Footer';
 
 export default function Home() {
 	return (
@@ -62,7 +63,7 @@ export default function Home() {
 					</div>
 				</section>
 				<section className={styles.section}>
-					<div className={styles.contact}>
+					<div id="contact" className={styles.contact}>
 						<h1 className={styles.contact__heading}>Get in touch</h1>
 						<Button
 							text="Email me"
@@ -72,6 +73,9 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
+			<footer className={cx(styles.darkMode, styles.center)}>
+				<Footer />
+			</footer>
 		</>
 	);
 }

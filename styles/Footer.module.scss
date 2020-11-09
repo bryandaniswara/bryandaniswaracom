@@ -1,0 +1,34 @@
+@import './variables';
+
+.footerWrapper {
+	max-width: $section-width;
+	width: 100%;
+}
+
+.footer {
+	max-width: $section-width;
+	font-family: $font-secondary;
+	display: flex;
+	flex-direction: column;
+	padding-top: 115px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.footer__heading {
+	font-family: $font-primary;
+	font-size: 36px;
+}
+
+.footer__role {
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+.copyright {
+	font-weight: lighter;
+	font-size: 24px;
+	color: #898989;
+	margin: 20px 0;
+}
