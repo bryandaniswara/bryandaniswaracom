@@ -30,6 +30,37 @@ export default function Home() {
 					</div>
 					<SocialLink placement="heading" />
 				</section>
+				<section className={styles.section}>
+					<div id="projects" className={styles.projects}>
+						<h1 className={styles.projects__heading}>Projects</h1>
+						<div className={styles.projects__items}>
+							<a
+								target="_blank"
+								href="https://github.com/bryandaniswara/bryandaniswaracom"
+							>
+								<img src="https://github-stats.bryandaniswara.com/api/pin/?username=bryandaniswara&repo=bryandaniswaracom&theme=dark" />
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/bryandaniswara/e-commerce"
+							>
+								<img src="https://github-stats.bryandaniswara.com/api/pin/?username=bryandaniswara&repo=e-commerce&theme=dark" />
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/bryandaniswara/kanban-app"
+							>
+								<img src="https://github-stats.bryandaniswara.com/api/pin/?username=bryandaniswara&repo=kanban-app&theme=dark" />
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/bryandaniswara/frontend-mentor-challenges"
+							>
+								<img src="https://github-stats.bryandaniswara.com/api/pin/?username=bryandaniswara&repo=frontend-mentor-challenges&theme=dark" />
+							</a>
+						</div>
+					</div>
+				</section>
 			</main>
 		</>
 	);

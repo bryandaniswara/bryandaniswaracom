@@ -28,6 +28,7 @@
 	position: relative;
 	padding-right: 10px;
 	padding-left: 10px;
+	height: 100%;
 }
 
 .subheading {
@@ -58,6 +59,35 @@
 	padding-bottom: 25px;
 }
 
+.projects {
+	display: flex;
+	flex-direction: column;
+	padding-top: 115px;
+	padding-right: 10px;
+	padding-left: 10px;
+	justify-content: center;
+}
+
+.projects__heading {
+	font-family: $font-primary;
+	font-style: bold;
+	font-size: 64px;
+	text-align: center;
+}
+
+.projects__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 40px 0;
+	max-width: 1000px;
+
+	a {
+		display: block;
+		padding: 10px;
+	}
+}
+
 @media screen and (max-width: 1350px) {
 	.heading {
 		font-size: 15vw;
@@ -71,6 +101,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.projects__heading {
+		font-size: 4em;
 	}
 }
 
@@ -95,5 +129,19 @@
 
 	.role {
 		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.projects__heading {
+		font-size: 2em;
+	}
+
+	.projects__items {
+		a {
+			img {
+				width: 280px;
+			}
+		}
 	}
 }
